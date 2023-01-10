@@ -1,2 +1,5 @@
-# byu-wdd130
-Project/Assignment for a BYU Idaho course
+What is this about?
+As student for Web Fundamentals (WDD 130) from BYU Idaho is required to build a project throughout the whole course. This project will be improve from week to week as per assignment requirements.
+
+Technology
+This is mainly HTML based project and beginner Github application
