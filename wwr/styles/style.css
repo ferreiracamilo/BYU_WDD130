@@ -1,5 +1,5 @@
 body{
-
+    background-color: #fcfbfb;
 }
 
 header{
@@ -18,17 +18,17 @@ nav a:hover{
 }
 
 .book:hover, .join:hover{
-    background-color: #57CC99;
-    color: White;
+    background-color: #fcfbfb;
+    color: blueviolet;
 }
 
 .msg h2{
-    background-color: #57CC99;
+    background-color: #fcfbfb;
     color: Black;
 }
 
 .msg p{
-    background-color: White;
+    background-color: #fcfbfb;
     color: Black;
 }
 
@@ -48,7 +48,7 @@ nav a{
 }
 
 .msg{
-
+    background-color: #fcfbfb;
 }
 
 h4{
@@ -69,6 +69,7 @@ main section{
 
 #background {
     height: 725px;
+    background-color: #57CC99;
 }
 
 footer{
