@@ -3,13 +3,45 @@ body{
 }
 
 header{
-    background-color:white;
+    background-color: #22577A;
+}
+
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+main section{
+    text-align: center;
+}
+
+.logo{
+    width: 80px;
+    filter: invert(100%);
+    filter: drop-shadow(1px 2px 15px white);
+}
+
+nav a{
+    text-align: center;
+    color: #57CC99;
+    text-decoration: none;
 }
 
 nav a:hover{
-    background-color: #57CC99;
-    color: White;
-    text-decoration: none;
+    color: #80ED99;
+    text-decoration: underline;
+}
+
+#hero-img{
+    width: 100%;
+}
+
+#hero-msg h1, #hero-msg h4{
+    text-align: center;
+}
+
+.home-title{
+    color: #22577A
 }
 
 .book, .join{
@@ -22,49 +54,8 @@ nav a:hover{
     color: blueviolet;
 }
 
-.msg h2{
-    background-color: #fcfbfb;
-    color: Black;
-}
-
-.msg p{
-    background-color: #fcfbfb;
-    color: Black;
-}
-
-#content{
-    max-width: 1600px;
-    margin: 0 auto;
-}
-
-nav a{
-    text-align: center;
-    background-color: #22577A;
-    color: White;
-}
-
-#hero-msg h1, #hero-msg h4{
-    text-align: center;
-}
-
-.msg{
-    background-color: #fcfbfb;
-}
-
-h4{
-    color: Black;
-}
-
-.home-title{
-    background-color: #22577A
-}
-
-.button-box{
-    text-align: center;
-}
-
-main section{
-    text-align: center;
+.icon{
+    width: 80px;
 }
 
 #background {
@@ -72,36 +63,44 @@ main section{
     background-color: #57CC99;
 }
 
+.msg{
+    background-color: #22577A;
+}
+
+.msg h2{
+    color: White;
+}
+
+.msg p{
+    color: #57CC99;
+}
+
+h4{
+    color: #57CC99;
+}
+
+.button-box{
+    text-align: center;
+}
+
 footer{
-    background-color: White;
+    background-color: #22577A;
 }
 
 footer a{
-    color: Black;
+    color: White;
     text-decoration: none;
 }
 
+footer a:hover{
+    color: #57CC99;
+}
+
 footer p{
+    color: white;
     font-size: 1.2em;
 }
 
 footer p a:hover{
     text-decoration: underline;
-}
-
-footer a:hover{
-    background-color: #57CC99;
-    color: White;
-}
-
-.logo{
-    width: 80px;
-}
-
-.icon{
-    width: 80px;
-}
-
-#hero-img{
-    width: 100%;
 }
