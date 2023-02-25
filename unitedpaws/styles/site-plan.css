@@ -69,12 +69,6 @@ p {
   padding: 1em;
 }
 
-li {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color-on-white);
-  padding: 0.4em;
-}
-
 .colors {
   width: 100%;
   min-width: 350px;
@@ -200,6 +194,7 @@ nav a:hover {
   clear: both;
 }
 
+/* Additions */
 #column1{
   background-color:#ffbe6999;
 }
@@ -216,4 +211,10 @@ nav a:hover {
   object-fit: scale-down;
   width: 500px;
   image-resolution: 100dpi;
+}
+
+li {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 0.4em;
 }
