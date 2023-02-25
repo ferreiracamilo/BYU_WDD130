@@ -196,6 +196,7 @@ nav a:hover {
 
 /* Additions */
 
+/* Initial treatment for UL and LI */
 ul{
   text-align: left;
 }
