@@ -40,6 +40,7 @@ img {
   display: block;
   margin: 0 auto;
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
@@ -67,6 +68,13 @@ p {
   color: var(--paragraph-color-on-white);
   padding: 1em;
 }
+
+li {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 0.4em;
+}
+
 .colors {
   width: 100%;
   min-width: 350px;
@@ -108,14 +116,12 @@ nav {
 nav  {
   list-style-type: none;
   display: flex;
-
 }
 nav a {
   padding:1em;
   min-width: 120px;
   text-decoration: none;
   padding: 10px;
-
 }
 nav a:link, nav a:visited {
   color: var(--nav-link-color);
@@ -172,4 +178,42 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 10%;
+}
+
+.column li{
+  float: left;
+  clear: both;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#column1{
+  background-color:#ffbe6999;
+}
+
+#column2{
+  background-color:#ffbe696b;
+}
+
+#column3{
+  background-color:#ffbe693b;
+}
+
+.pets{
+  object-fit: scale-down;
+  width: 500px;
+  image-resolution: 100dpi;
 }
