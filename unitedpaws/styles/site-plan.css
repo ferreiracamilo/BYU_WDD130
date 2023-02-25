@@ -195,6 +195,42 @@ nav a:hover {
 }
 
 /* Additions */
+
+ul{
+  text-align: left;
+}
+
+li {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+  padding: 0.4em;
+}
+
+/* Table from Contact Us Secondary Page */
+.pet-row{
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.pet-col{
+  padding: 10% 15%;
+}
+
+.pet-col h3{
+  margin: 20px 0 40px;
+}
+
+.pet-col ul{
+  margin: 20px 0;
+}
+.pet-col ul li{
+  margin: 15px 0;
+  size: 20px;
+}
+
 #column1{
   background-color:#ffbe6999;
 }
@@ -207,14 +243,9 @@ nav a:hover {
   background-color:#ffbe693b;
 }
 
+/* Pet images resize for personal site plan, however all images were optimized */
 .pets{
   object-fit: scale-down;
   width: 500px;
   image-resolution: 100dpi;
-}
-
-li {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color-on-white);
-  padding: 0.4em;
 }
