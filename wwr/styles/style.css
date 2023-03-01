@@ -296,53 +296,50 @@ footer .social img{
     transform: scale(1.1);
 }
 
-
-
-
-
-.container{
-    margin-top: 10%;
+.container-faq{
+    margin-top: 5%;
+    margin-bottom: 5%;
     width: 100%;
-    min-height: 80vh;
+    min-height: 30vh;
 }
 
-.container h1{
+.container-faq h1{
     text-align: center;
     color:#22577A;
 }
 
-.price-row{
-    width: 90%;
-    max-width: 1100px;
+.faq-row{
+    width: 100%;
+    max-width: 1600px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 25px;
 }
 
-.price-col{
+.faq-col{
     padding: 10% 15%;
     border-radius: 10px;
     text-align: center;
 }
 
-.price-col ul{
+.faq-col ul{
     text-align: left;
     margin: 20px 0;
-    color: #22577A;
+    color: black;
 }
-.price-col ul li{
-    list-style: none; /* Remove if collapsible does not work */
+.faq-col ul li{
+    list-style: none;
     margin: 15px 0;
     size: 20px;
 }
 
 summary {
-    background-color: palegoldenrod;
+    background-color:#C7F9CC;
 }
   
-span {
-background-color: paleturquoise;
+details span {
+background-color:#fcfbfb;
 display: block;
 margin-top: 5px;
 }
