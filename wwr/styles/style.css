@@ -323,17 +323,6 @@ footer .social img{
     text-align: center;
 }
 
-.faq-col ul{
-    text-align: left;
-    margin: 20px 0;
-    color: black;
-}
-.faq-col ul li{
-    list-style: none;
-    margin: 15px 0;
-    size: 20px;
-}
-
 summary {
     background-color:#C7F9CC;
 }
