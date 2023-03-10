@@ -1,8 +1,10 @@
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a | */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Roboto+Mono:wght@700&display=swap');
 
+/************************************************************
+*
+*               Variables
+*
+************************************************************/
 :root {
     /* change the values below to your colors from your palette */
     --primary-color: #FF9F1C;
@@ -28,3 +30,117 @@ Fonts are separated by a | */
     /* call values defined by -> var(--property_name) */
 }
 
+/************************************************************
+*
+*               BODY AND BACKGROUND
+*
+************************************************************/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.body-background{
+    height:100vh;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    background-color: white;
+    background-image: url(../images/Optimized/paws/paws-bones-1-removebg-preview.png);
+    background-repeat: repeat; 
+    opacity: 0.05;
+    z-index: -1;
+}
+
+/************************************************************
+*
+*               HEADER
+*
+************************************************************/
+
+header {
+    background-color: var(--nav-background-color);
+    display: grid;
+    padding: 0 0 5px 0;
+    align-items: center;
+    grid-template-columns: 300px auto;
+    position: relative;
+    z-index: 2;
+}
+  
+#logo_link {
+    width: 320px;
+    background-color: var(--heading-background);
+    border-radius: 50px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+}
+  
+#logo_link > img {
+    grid-column: 1;
+    width: 200px;
+    align-self: center;
+}
+  
+nav {
+    grid-column: 2;
+    background-color: var(--heading-background);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    justify-items: center;
+}
+  
+nav a {
+    color: var(--nav-link-color);
+    padding: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: var(--heading-font);
+    text-decoration: none;
+}
+  
+nav a:hover {
+    background-color: var(--nav-hover-background-colore);
+    color: var(--nav-hover-link-color);
+    text-decoration: underline;
+}
+
+/************************************************************
+*
+*               FOOTER
+*
+************************************************************/
+
+
+
+/************************************************************
+*
+*               MAIN, CONTENT AND HOMEGRID
+*
+************************************************************/
+
+#content {
+    max-width: 1600px;
+    margin: auto;
+    background-color: var(--color-white);
+}
+
+main section{
+    text-align: center;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+.home-grid{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
