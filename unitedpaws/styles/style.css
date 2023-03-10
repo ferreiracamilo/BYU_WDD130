@@ -26,7 +26,8 @@
     --nav-background-color: #FFBF69;
     --nav-hover-link-color: white;
     --nav-hover-background-color: #2EC4B6;
-
+    --color-white: #fff;
+    --footer-background: #FFBF69;
     /* call values defined by -> var(--property_name) */
 }
 
@@ -42,13 +43,13 @@ html, body {
 }
 
 .body-background{
-    height:100vh;
+    height:100%;
     position:absolute;
     top:0px;
     right:0px;
     bottom:0px;
     left:0px;
-    background-color: white;
+    background-color: var(--color-white);
     background-image: url(../images/Optimized/paws/paws-bones-1-removebg-preview.png);
     background-repeat: repeat; 
     opacity: 0.05;
@@ -70,29 +71,15 @@ header {
     position: relative;
     z-index: 2;
 }
-  
-#logo_link {
-    width: 320px;
-    background-color: var(--heading-background);
-    border-radius: 50px;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    padding: 5px 0;
-}
-  
-#logo_link > img {
-    grid-column: 1;
-    width: 200px;
-    align-self: center;
-}
-  
+
 nav {
     grid-column: 2;
     background-color: var(--heading-background);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
     justify-items: center;
+    border-top: 1px solid var(--accent2-color);
+    border-bottom: 1px solid var(--accent2-color);
 }
   
 nav a {
@@ -107,9 +94,24 @@ nav a {
 }
   
 nav a:hover {
-    background-color: var(--nav-hover-background-colore);
+    background-color: var(--nav-hover-background-color);
     color: var(--nav-hover-link-color);
-    text-decoration: underline;
+}
+  
+#logo_link {
+    width: 320px;
+    background-color: var(--heading-background);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+  
+#logo_link > img {
+    grid-column: 1;
+    width: 200px;
+    align-self: center;
+    filter: drop-shadow(10px 2px 20px rgb(255, 255, 255));
 }
 
 /************************************************************
@@ -118,6 +120,34 @@ nav a:hover {
 *
 ************************************************************/
 
+footer {
+    color: var(--color-white);
+    background-color: var(--footer-background);
+    padding: 25px 50px;
+    margin: 200px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+  }
+  
+  footer h3,
+  footer a,
+  footer a:hover {
+    color: var(--color-white);
+  }
+
+  footer a{
+    text-decoration: none;
+  }
+
+  footer a:hover{
+    text-decoration: underline;
+  }
+
+footer .social img{
+    width: 64px;
+}
 
 
 /************************************************************
@@ -129,7 +159,7 @@ nav a:hover {
 #content {
     max-width: 1600px;
     margin: auto;
-    background-color: var(--color-white);
+    background-color: var(--color-white); /*In case is preferred to leave image as total background, comment this line*/
 }
 
 main section{
@@ -144,3 +174,37 @@ main section img {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
+
+/************************************************************
+*
+*               MEDIA SCREEN
+*
+************************************************************/
+
+@media screen and (max-width: 900px) {
+    header,
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+  
+    #logo_link {
+      background-color: unset;
+      width: auto;
+    }
+  
+    nav,
+    footer {
+      flex-direction: column;
+    }
+  
+    nav a {
+      display: block;
+      padding: 15px;
+    }
+
+    footer {
+      margin-top: 25px;
+    }
+  }
