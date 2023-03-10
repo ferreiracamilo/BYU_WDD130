@@ -128,24 +128,28 @@ footer {
     justify-content: space-around;
     align-items: center;
     font-size: 1rem;
-  }
+}
   
-  footer h3,
-  footer a,
-  footer a:hover {
+footer h3,
+footer a {
     color: var(--color-white);
-  }
+}
 
-  footer a{
+footer a{
     text-decoration: none;
-  }
+}
 
-  footer a:hover{
-    text-decoration: underline;
-  }
+/* footer a:hover */
+footer h3 a:hover{
+  text-decoration: underline;
+}
+
+footer a:hover{
+  text-decoration: none;
+}
 
 footer .social img{
-    width: 64px;
+    width: 40px;
 }
 
 
@@ -206,4 +210,4 @@ main section img {
     footer {
       margin-top: 25px;
     }
-  }
+}
