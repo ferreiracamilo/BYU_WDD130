@@ -50,7 +50,7 @@ html, body {
     bottom:0px;
     left:0px;
     background-color: var(--color-white);
-    background-image: url(../images/Optimized/paws/paws-bones-1-removebg-preview.png);
+    background-image: url(../images/Optimized/paws/paws-bones-1-background.png);
     background-repeat: repeat; 
     opacity: 0.05;
     z-index: -1;
