@@ -28,7 +28,46 @@
     --nav-hover-background-color: #2EC4B6;
     --color-white: #fff;
     --footer-background: #FFBF69;
+    --heading-color: #fff;
     /* call values defined by -> var(--property_name) */
+}
+
+/************************************************************
+*
+*               GENERAL HTML TAGS
+*
+************************************************************/
+
+h1, h2 {
+    /* padding: 0.5em; */
+    margin: 0;
+}
+
+h3, h4 {
+    padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--heading-color);
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
 }
 
 /************************************************************
@@ -89,7 +128,6 @@ nav a {
     text-transform: uppercase;
     font-size: 20px;
     font-family: var(--heading-font);
-    text-decoration: none;
 }
   
 nav a:hover {
@@ -140,23 +178,14 @@ footer a {
     color: var(--color-white);
 }
 
-footer a{
-    text-decoration: none;
-}
-
 /* footer a:hover */
 footer h3 a:hover{
   text-decoration: underline;
 }
 
-footer a:hover{
-  text-decoration: none;
-}
-
 footer .social img{
     width: 40px;
 }
-
 
 /************************************************************
 *
@@ -192,6 +221,10 @@ main section img {
 ************************************************************/
 
 /*#region image slider*/
+.slider-container h2{
+
+}
+
 .slider-container{
     height: 70vh;
     width: 100%;
@@ -254,6 +287,18 @@ main section img {
 .slide-3 {
     background-image: url("../images/Optimized/home-banners/home-slider-3.jpg");
 }
+
+.transbox {
+    background-color: rgba(15, 15, 15, 0.7);
+    /* Opacity can be given to background with rgba*/
+    width:fit-content;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /*#endregion image slider*/
 
 
