@@ -64,10 +64,12 @@ h2 {
 
 p {
     text-align: left;
+    font-family: var(--paragraph-font);
 }
 
 a {
     text-decoration: none;
+    font-family: var(--paragraph-font);
 }
 
 /************************************************************
@@ -298,10 +300,7 @@ main section img {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 /*#endregion image slider*/
-
-
 
 /************************************************************
 *
