@@ -214,8 +214,6 @@ main section img {
     grid-template-columns: repeat(10, 1fr);
 }
 
-
-
 /************************************************************
 *
 *               HOMEPAGE
@@ -229,6 +227,7 @@ main section img {
     position: relative;
     overflow: hidden; 
     text-align: center;
+    margin-bottom: 2%;
 }
 
 .slider-container img {
@@ -297,6 +296,28 @@ main section img {
     transform: translate(-50%, -50%);
 }
 /*#endregion image slider*/
+
+/*#region paragraph below image slider*/
+.wrapper-statistics {
+    grid-column: 2/10;
+    grid-row: 1;
+    display: flex;
+    width: 100%;
+    flex: auto;
+}
+  
+.wrapper-paragraph {
+    font-size: 1.5rem;
+    width: 100%;
+}
+  
+.wrapper-image-div {
+    background-image: url('../images/Optimized/paws/paws-path-1.png');
+    background-position: center;
+    background-size:cover;
+    width: 10%;
+}
+/*#endregion paragraph below image slider*/
 
 /************************************************************
 *
