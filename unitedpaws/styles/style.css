@@ -80,6 +80,11 @@ li {
     font-family: var(--paragraph-font);
     color: var(--paragraph-color-on-white);
     padding: 0.4em;
+    font-size: 1.4rem;
+}
+
+form{
+    margin-left: 20%;
 }
 
 form div {
@@ -88,10 +93,15 @@ form div {
 
 label {
     display: inline-block;
-    width: 150px;
+    width: 200px;
     font-family: var(--paragraph-font);
     color: var(--paragraph-color-on-white);
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+}
+
+.forcss{
+    display: inline;
+    width: 200px;
 }
 
 input, textarea {
@@ -99,7 +109,7 @@ input, textarea {
 }
 
 input[type='radio']{
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 5%;   
 }
 
@@ -139,9 +149,6 @@ input[type=submit] {
     cursor: pointer;
     font-size: 1.6rem;
     font-family: var(--paragraph-font);
-    display: block;
-    margin-left: auto;
-    margin-right: 0;
 }
 
 /************************************************************
@@ -224,8 +231,6 @@ nav a:hover {
 }
 
 #logo_link > img:hover {
-    /* filter: drop-shadow(10px 2px 20px rgb(255, 255, 255)); */
-    /* -webkit-filter: drop-shadow(10px 3px 40px rgba(0,0,0,0.5)); */
     filter: drop-shadow(10px 2px 20px rgb(255, 255, 255));
 }
 
@@ -537,51 +542,22 @@ button:hover, a:hover {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 0.4fr);
     padding: 0%;
     background-color: #eed3b14b;
 }
 
+.contact-form{
+    grid-column: 1;
+    margin: 10%;
+}
+
 .contact-image{
-    grid-column: 4/5;
-    grid-row: 2;
+    margin-top: 15%;
+    grid-column: 3/5;
 }
 
 .contact-image img{
     width: 80%;
-}
-
-.contact-form{
-    grid-column: 2/3;
-    grid-row: 2;
-}
-
-form {
-  direction:inherit;
-}
-
-#fname{
-    /* width: 77%; */
-    display: block;
-  direction: ltr;
-}
-
-#flname{
-    /* width: 60%; */
-    display: block;
-  direction: ltr;
-}
-
-#femail{
-    /* width: 78%; */
-    display: block;
-  direction: ltr;
-}
-
-#fsubject{
-    /* width: 106%; */
-    display: block;
-  direction: ltr;
 }
 
 /************************************************************
