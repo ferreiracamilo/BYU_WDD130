@@ -542,16 +542,32 @@ button:hover, a:hover {
     grid-row: 2;
 }
 
+form {
+  direction:inherit;
+}
+
 #fname{
-    width: 75%;
+    /* width: 77%; */
+    display: block;
+  direction: ltr;
 }
 
 #flname{
-    width: 60%;
+    /* width: 60%; */
+    display: block;
+  direction: ltr;
 }
 
 #femail{
-    width: 77%;
+    /* width: 78%; */
+    display: block;
+  direction: ltr;
+}
+
+#fsubject{
+    /* width: 106%; */
+    display: block;
+  direction: ltr;
 }
 
 /************************************************************
