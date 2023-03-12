@@ -33,24 +33,24 @@
                     <form action="">
                         <div>
                             <label for="fname">Name:</label>
-                            <input id="fname" name="fname" type="text" size="30" alt="name textfield" autofocus/>
+                            <input id="fname" name="fname" type="text" size="30" alt="name textfield" required autofocus/>
                         </div>
                         <div>
                             <label for="flname">Last name:</label>
-                            <input id="flname" name="flname" type="text" size="30" alt="lastname textfield"/>
+                            <input id="flname" name="flname" type="text" size="30" alt="lastname textfield" required/>
                         </div>
                         <div>
                             <label for="femail">Email Address:</label>
-                            <input id="femail" name="femail" type="email" size="30" alt="email textfield"/>
+                            <input id="femail" name="femail" type="email" size="30" alt="email textfield" required/>
                         </div>
                         <div>
                             <label for="fstatus">Is your pet lost?:</label><br>
-                            <input type="radio" id="yes" name="fstatus" value="yes" alt="My pet is lost option"> <label clas="forcss">Yes</label>
-                            <input type="radio" id="no" name="fstatus" value="no" alt="My pet is not lost option"> <label class="forcss">No</label>
+                            <input type="radio" id="yes" name="fstatus" value="yes" alt="My pet is lost option" required> <label clas="forcss">Yes</label>
+                            <input type="radio" id="no" name="fstatus" value="no" alt="My pet is not lost option" required> <label class="forcss">No</label>
                         </div>
                         <div>
                             <label for="fsubject">Subject:</label>
-                            <textarea id="fsubject" name="fsubject" rows="8" cols="65" alt="subject textarea"></textarea>
+                            <textarea id="fsubject" name="fsubject" rows="8" cols="65" alt="subject textarea" required></textarea>
                         </div>
                         <input type="submit" value="Send" alt="Send form button"/>
                     </form>
