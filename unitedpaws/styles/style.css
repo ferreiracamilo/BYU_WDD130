@@ -387,6 +387,10 @@ main section img {
     color: var(--accent2-color);
 }
 
+.pet-card p{
+    text-align: center;
+}
+
 .pet-card a{
     color: white;
 }
