@@ -72,6 +72,16 @@ a {
     font-family: var(--paragraph-font);
 }
 
+ul{
+    text-align: left;
+}
+
+li {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+    padding: 0.4em;
+}
+
 /************************************************************
 *
 *               BODY AND BACKGROUND
@@ -421,6 +431,43 @@ button:hover, a:hover {
 .temp_div img{
     width: 500px;
     height: 400px;
+}
+
+/* Table from Contact Us Secondary Page */
+.table-contact-row{
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.table-contact-col{
+    padding: 0%;
+}
+
+.table-contact-col h3{
+    margin: 20px 0 40px;
+}
+
+.table-contact-col ul{
+    margin: 20px 0;
+}
+.table-contact-col ul li{
+    margin: 15px 0;
+    size: 20px;
+}
+
+.contact-column1{
+    background-color:#ffbe6999;
+}
+
+.contact-column2{
+    background-color:#ffbe696b;
+}
+
+.contact-column3{
+    background-color:#ffbe693b;
 }
 
 /************************************************************
