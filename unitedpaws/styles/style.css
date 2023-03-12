@@ -86,7 +86,7 @@ label{
     font-family: var(--paragraph-font);
     color: var(--paragraph-color-on-white);
     padding: 0.4em;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 input[type='radio']:after {
@@ -107,6 +107,12 @@ input[type='radio']:checked:after {
     background-color: #ffa500;
 }
 
+input[type='text'],input[type='email']{
+    font-size: 1.8rem;
+    display: inline-block;
+    margin-right: -50%;
+}
+
 input[type=submit] {
     background-color: var(--accent2-color); 
     border: none;
@@ -117,6 +123,7 @@ input[type=submit] {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    font-size: 1.6rem;
     font-family: var(--paragraph-font);
     display: block;
     margin-left: auto;
@@ -533,6 +540,18 @@ button:hover, a:hover {
 .contact-form{
     grid-column: 2/3;
     grid-row: 2;
+}
+
+#fname{
+    width: 75%;
+}
+
+#flname{
+    width: 60%;
+}
+
+#femail{
+    width: 77%;
 }
 
 /************************************************************
