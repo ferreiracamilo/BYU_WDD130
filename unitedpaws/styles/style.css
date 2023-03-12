@@ -82,6 +82,47 @@ li {
     padding: 0.4em;
 }
 
+label{
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+    padding: 0.4em;
+    font-size: 1.5rem;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid var(--accent2-color);
+}
+
+input[type='radio']:checked:after {
+    background-color: #ffa500;
+}
+
+input[type=submit] {
+    background-color: var(--accent2-color); 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: var(--paragraph-font);
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+
 /************************************************************
 *
 *               BODY AND BACKGROUND
@@ -428,26 +469,21 @@ button:hover, a:hover {
 *
 ************************************************************/
 
-.temp_div img{
-    width: 500px;
-    height: 400px;
-}
-
-/* Table from Contact Us Secondary Page */
-.table-contact-row{
-    width: 100%;
+.contact-main{
     max-width: 1400px;
     margin: auto;
+    margin-top: 100px;
+}
+
+/*#region Table from Contact Us Secondary Page - Values & Suggestion */
+.table-contact-row{
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .table-contact-col{
     padding: 0%;
-}
-
-.table-contact-col h3{
-    margin: 20px 0 40px;
 }
 
 .table-contact-col ul{
@@ -468,6 +504,35 @@ button:hover, a:hover {
 
 .contact-column3{
     background-color:#ffbe693b;
+}
+
+.table-contact-col h3{
+    padding: 0%;
+    text-align: center;
+}
+/*#endregion Table from Contact Us Secondary Page - Values & Suggestion */
+
+.contact-row-master{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 0.4fr);
+    padding: 0%;
+    background-color: #eed3b14b;
+}
+
+.contact-image{
+    grid-column: 4/5;
+    grid-row: 2;
+}
+
+.contact-image img{
+    width: 80%;
+}
+
+.contact-form{
+    grid-column: 2/3;
+    grid-row: 2;
 }
 
 /************************************************************
