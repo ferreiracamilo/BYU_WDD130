@@ -427,7 +427,6 @@ main section img {
     max-width: 100%;
     padding: 10%;
     padding-top: 0%;
-
 }
 /*endregion lost-dog*/
 
@@ -535,6 +534,8 @@ button:hover, a:hover {
 .table-contact-col h3{
     padding: 0%;
     text-align: center;
+    font-size: 1.6rem;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 /*#endregion Table from Contact Us Secondary Page - Values & Suggestion */
 
@@ -552,7 +553,7 @@ button:hover, a:hover {
 }
 
 .contact-image{
-    margin-top: 15%;
+    margin-top: 25%;
     grid-column: 3/5;
 }
 
