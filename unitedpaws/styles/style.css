@@ -82,11 +82,25 @@ li {
     padding: 0.4em;
 }
 
-label{
+form div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
     font-family: var(--paragraph-font);
     color: var(--paragraph-color-on-white);
-    padding: 0.4em;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+}
+
+input, textarea {
+    padding: 5px 10px;
+}
+
+input[type='radio']{
+    margin-top: 5%;
+    margin-bottom: 5%;   
 }
 
 input[type='radio']:after {
