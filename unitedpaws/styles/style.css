@@ -581,6 +581,10 @@ button:hover, a:hover {
       background-color: unset;
       width: auto;
     }
+
+    #logo_link img{
+        align-self: left;
+      }
   
     nav,
     footer {
@@ -601,5 +605,10 @@ button:hover, a:hover {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
+    }
+
+    .home-grid {
+        display: block;
+        height: auto;
     }
 }
