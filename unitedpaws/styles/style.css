@@ -595,4 +595,11 @@ button:hover, a:hover {
     footer {
       margin-top: 25px;
     }
+
+    .grid-pets{
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
 }
