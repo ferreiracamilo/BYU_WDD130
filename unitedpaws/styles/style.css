@@ -483,7 +483,7 @@ button:hover, a:hover {
 }
 /*endregion pet card*/
 
-.wrapper-exp{
+.grid-pets{
     margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
