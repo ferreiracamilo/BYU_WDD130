@@ -582,10 +582,6 @@ button:hover, a:hover {
       width: auto;
     }
 
-    #logo_link img{
-        align-self: left;
-      }
-  
     nav,
     footer {
       flex-direction: column;
