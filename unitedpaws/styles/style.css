@@ -171,7 +171,7 @@ html, body {
     background-color: var(--color-white);
     background-image: url(../images/Optimized/paws/paws-bones-1-background.png);
     background-repeat: repeat; 
-    opacity: 0.05;
+    opacity: 0.07;
     z-index: -1;
 }
 
