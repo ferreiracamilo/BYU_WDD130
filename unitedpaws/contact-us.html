@@ -13,6 +13,8 @@
         <!-- PERMANENT STRUCTURE -->
         <div class="body-background"></div>
 
+        
+
         <header>
             <a id="logo_link" href="index.html">
                 <img class="logo" src="images/Optimized/logo/logo-transparent-4.png" alt="United Paws">
@@ -28,30 +30,44 @@
         <main class="contact-main">
 
             <div class="contact-row-master">
+                
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <p>We appreciate your interest in contacting us as well your support to all animals in the world. Please be patient we're working on your request.</p>
+                        <button onclick="closeModal()" class="close">&times;</button>
+                    </div>
+                </div>
+
                 <div class="contact-form">
-                    <form action="">
-                        <div>
-                            <label for="fname">Name:</label>
-                            <input id="fname" name="fname" type="text" size="30" alt="name textfield" required autofocus/>
-                        </div>
-                        <div>
-                            <label for="flname">Last name:</label>
-                            <input id="flname" name="flname" type="text" size="30" alt="lastname textfield" required/>
-                        </div>
-                        <div>
-                            <label for="femail">Email Address:</label>
-                            <input id="femail" name="femail" type="email" size="30" alt="email textfield" required/>
-                        </div>
-                        <div>
-                            <label for="fstatus">Is your pet lost?:</label><br>
-                            <input type="radio" id="yes" name="fstatus" value="yes" alt="My pet is lost option" required> <label clas="forcss">Yes</label>
-                            <input type="radio" id="no" name="fstatus" value="no" alt="My pet is not lost option" required> <label class="forcss">No</label>
-                        </div>
-                        <div>
-                            <label for="fsubject">Subject:</label>
-                            <textarea id="fsubject" name="fsubject" alt="subject textarea" rows="8" cols="65" required></textarea>
-                        </div>
-                        <input type="submit" value="Send" alt="Send form button"/>
+                    <form id="myForm" onsubmit="openModal()">
+                        <ul>
+                            <li>
+                                <label for="fname">Name:</label>
+                                <input id="fname" name="fname" type="text" size="30" required/>
+                            </li>
+                            <li>
+                                <label for="flname">Last name:</label>
+                                <input id="flname" name="flname" type="text" size="30" required/>
+                            </li>
+                            <li>
+                                <label for="femail">Email Address:</label>
+                                <input id="femail" name="femail" type="email" size="30" required/>
+                            </li>
+                            <li>
+                                <label>Is your pet lost?:</label><br>
+                                <input type="radio" id="yes" name="fstatus" value="yes" required> <label class="forcss">Yes</label>
+                                <input type="radio" id="no" name="fstatus" value="no" required> <label class="forcss">No</label>
+                            </li>
+                            <li>
+                                <label for="fsubject">Subject:</label>
+                                <textarea id="fsubject" name="fsubject" rows="8" cols="65" required></textarea>
+                            </li>
+                            <li>
+                                <button type="submit">Send your message</button>
+                            </li>
+                        </ul>
                     </form>
                 </div>
 
@@ -131,5 +147,26 @@
         </footer>
         <!-- PERMANENT STRUCTURE -->
     </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+            
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        function openModal() {
+            modal.style.display = "block";
+            event.preventDefault();
+        }
+
+        function closeModal(){
+            location.reload(); //Doing a mimic that a form has been sent and reloading the page
+        }
+    </script>
+
 </body>
 </html>
