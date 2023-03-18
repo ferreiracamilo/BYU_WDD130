@@ -91,6 +91,12 @@ form div {
     margin-bottom: 10px;
 }
 
+form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 label {
     display: inline-block;
     width: 200px;
@@ -106,6 +112,12 @@ label {
 
 input, textarea {
     padding: 5px 10px;
+    color: var(--primary-color);
+}
+
+input:focus, textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
 }
 
 input[type='radio']{
@@ -135,20 +147,30 @@ input[type='text'],input[type='email']{
     font-size: 1.8rem;
     display: inline-block;
     margin-right: -50%;
+    size: 30;
 }
 
-input[type=submit] {
+textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+
+    /* Provide space to type some text */
+    height: 5em;
+}
+
+button {
     background-color: var(--accent2-color); 
-    border: none;
+    border: 2px solid transparent;
     color: white;
     padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-family: var(--paragraph-font);
+}
+
+button:hover {
+    border: 2px solid var(--primary-color);
 }
 
 /************************************************************
@@ -454,7 +476,7 @@ main section img {
     text-align: center;
 }
 
-.contact-button {
+.pet-contact-button {
     color: var(--primary-color);
     background-color: var(--primary-color);
     display: block;
@@ -524,6 +546,7 @@ main section img {
 }
 /*#endregion Table from Contact Us Secondary Page - Values & Suggestion */
 
+/*#region Contact Form */
 .contact-row-master{
     width: 100%;
     display: grid;
@@ -536,7 +559,10 @@ main section img {
     grid-column: 1;
     margin: 10%;
 }
+/*#endregion Contact Form */
 
+
+/*#region Contact Image */
 .contact-image{
     margin-top: 25%;
     grid-column: 3/5;
@@ -544,6 +570,66 @@ main section img {
 
 .contact-image img{
     width: 80%;
+}
+/*#endregion Contact Image */
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    padding-top: 20%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+/* Modal Content */
+.modal-content {
+    background-color: #f88c27;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #0c0b0b;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 20px;
+    grid-template-rows: 10px 0.5fr 10px;
+}
+
+.modal-content p{
+    font-family: var(--paragraph-font);
+    color: white;
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 2;
+}
+  
+/* The Close Button */
+.close {
+    color: black;
+    background-color: transparent;
+    font-size: 28px;
+    font-weight: bold;
+    border: none;
+    grid-column: 4;
+    padding: 0px 0px;
+}
+
+.close:hover, .close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#myModal button:hover {
+    border: none;
+    margin-top: 1px;
 }
 
 /************************************************************
