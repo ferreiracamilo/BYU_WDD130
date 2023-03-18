@@ -171,7 +171,7 @@ html, body {
     background-color: var(--color-white);
     background-image: url(../images/Optimized/paws/paws-bones-1-background.png);
     background-repeat: repeat; 
-    opacity: 0.05;
+    opacity: 0.07;
     z-index: -1;
 }
 
@@ -431,23 +431,16 @@ main section img {
 *
 ************************************************************/
 
-/*#region pet rows/columns*/
-.pet-row{
-    width: 90%;
-    margin: auto;
+.grid-pets{
+    margin-top: 100px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4em;
 }
-  
-.pet-col{
-    padding: 15% 15%;
-}
-/*#endregion pet rows/columns*/
 
 /*#region pet card*/
 .pet-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
     margin: auto;
     margin-bottom: 10%;
     text-align: center;
@@ -462,33 +455,25 @@ main section img {
     text-align: center;
 }
 
+.contact-button {
+    color: var(--primary-color);
+    background-color: var(--primary-color);
+    display: block;
+    padding: 10px;
+    width: inherit;
+    text-align: center;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.pet-card a:hover {
+    opacity: 0.7;
+}
+
 .pet-card a{
     color: white;
 }
-
-button {
-    border: none;
-    outline: 0;
-    padding: 8px;
-    color: white;
-    background-color: var(--primary-color);
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-}
-
-button:hover, a:hover {
-    opacity: 0.7;
-}
 /*endregion pet card*/
-
-.grid-pets{
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
 
 /************************************************************
 *
