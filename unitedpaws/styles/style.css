@@ -615,7 +615,7 @@ textarea {
     height: 5em;
 }
 
-button {
+form button {
     background-color: var(--accent2-color); 
     border: 2px solid transparent;
     color: white;
@@ -629,7 +629,7 @@ button {
     margin-right: -9em;
 }
 
-button:hover {
+form button:hover {
     border: 2px solid var(--primary-color);
 }
 
