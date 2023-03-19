@@ -548,12 +548,6 @@ form div {
     margin-bottom: 10px;
 }
 
-form ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
 label {
     display: inline-block;
     width: 200px;
@@ -689,7 +683,7 @@ button:hover {
     }
 
     .contact-image{
-        display:none;
+        margin-left: 5%;
     }
 
     button{
