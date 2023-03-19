@@ -611,7 +611,6 @@ input[type='text'],input[type='email']{
     font-size: 1.8rem;
     display: inline-block;
     margin-right: -50%;
-    size: 30;
 }
 
 textarea {
