@@ -631,6 +631,9 @@ button {
     cursor: pointer;
     font-size: 1.2rem;
     font-family: var(--paragraph-font);
+    display: block;
+    margin-left: auto;
+    margin-right: -9em;
 }
 
 button:hover {
@@ -688,5 +691,16 @@ button:hover {
 
     .contact-image{
         display:none;
+    }
+
+    button{
+        display: block;
+        margin-left: 0;
+        margin-right: auto;
+    }
+    
+    input[type='text'], input[type='email'], textarea {
+        /* Uniform text field size */
+        width: 300px;
     }
 }
