@@ -5,7 +5,7 @@ As student for Web Fundamentals (WDD 130) from BYU Idaho is required to build a 
 This is mainly HTML based project and beginner Github application
 
 **Links**<br>
-- [onelink](https://ferreiracamilo.github.io/BYU_WDD130/aboutme/index)https://ferreiracamilo.github.io/BYU_WDD130/aboutme/index
+- https://ferreiracamilo.github.io/BYU_WDD130/aboutme/index)https://ferreiracamilo.github.io/BYU_WDD130/aboutme/index
 - https://ferreiracamilo.github.io/BYU_WDD130/otherassignment-notindexed/WK11/index
 - https://ferreiracamilo.github.io/BYU_WDD130/otherassignment-notindexed/WK12/webcomponent
 - https://ferreiracamilo.github.io/BYU_WDD130/otherassignment-notindexed/WK2/css-induction/index
